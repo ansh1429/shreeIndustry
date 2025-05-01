@@ -1,0 +1,72 @@
+# Shree Industry - E-commerce Front-End
+
+A modern, professional, and aesthetic e-commerce front-end built with **React** and **Tailwind CSS** for **Shree Industry**, a company that supplies metal products used in construction (e.g., steel rods, metal sheets, iron bars, beams).
+
+---
+
+## 🚀 Project Overview
+
+This project is a clean and responsive front-end interface showcasing Shree Industry’s product offerings. It emphasizes industrial strength, reliability, and usability through a dark-themed, grid-based design.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – JavaScript library for building user interfaces
+- **Tailwind CSS** – Utility-first CSS framework for custom design
+- **Vite / CRA** – (Depending on your setup) for fast development and build
+
+---
+
+## 📁 Features
+
+### ✅ Pages
+
+- **Homepage**  
+  - Hero section with a bold introduction to Shree Industry
+  - Highlights durability, strength, and quality of products
+
+- **Products Page**  
+  - Grid layout displaying metal products  
+  - Includes image, name, brief description, and price  
+  - No filtering, sorting, or cart functionality
+
+- **Product Detail Page**  
+  - Large product image  
+  - Detailed description, specifications, and price  
+
+- **Responsive Header**  
+  - Logo and navigation (Home, Products, About Us, Contact)
+
+- **Footer**  
+  - Company info, contact links, and social media handles
+
+---
+
+## 🎨 Design Guidelines
+
+- **Color Palette**:  
+  - Industrial tones like steel gray, charcoal, and muted metallics  
+  - Accent colors as needed (e.g., muted blue or orange)
+
+- **Typography**:  
+  - Modern, readable fonts for both headings and body text
+
+- **Layout**:  
+  - Fully responsive with clean grid and spacing  
+  - Mobile-first design
+
+---
+
+## 📸 Screenshots
+
+> _Add screenshots here when available_
+
+---
+
+## 🔧 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/shree-industry-ecommerce.git
+   cd shree-industry-ecommerce
