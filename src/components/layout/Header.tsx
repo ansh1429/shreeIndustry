@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Logo from "../ui/Logo";
@@ -13,6 +13,18 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Close the mobile menu when screen size changes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isMenuOpen]);
 
   return (
     <header
@@ -88,8 +100,8 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full bg-primary-800 shadow-lg transition-transform duration-300 ease-in-out transform ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        className={`md:hidden absolute top-full left-0 w-full bg-primary-800 shadow-lg transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
         <nav className="flex flex-col p-4 space-y-4">
